@@ -3,6 +3,7 @@ module.exports = {
   theme: {
     fontFamily: {
       primary: 'Poppins',
+      barlow: 'Barlow Semi Condensed',
     },
     container: {
       padding: {
@@ -22,7 +23,7 @@ module.exports = {
         secondary: '#F5E6E0',
       },
       backgroundImage: {
-        hero: "url('./img/bg_hero.svg')",
+        hero: "url('./src/img/background.png')",
       },
     },
   },
