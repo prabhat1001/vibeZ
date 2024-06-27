@@ -5,12 +5,17 @@ import './index.css'
 
 // import product provider
 import ProductProvider from './contexts/ProductContext.jsx'
+import SidebarProvider from './contexts/SidebarContext.jsx'
+import CartProvider from './contexts/CartContext.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-
-  <ProductProvider>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </ProductProvider>
+  <SidebarProvider>
+    <CartProvider>
+      <ProductProvider>
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
+      </ProductProvider>
+    </CartProvider>
+  </SidebarProvider>
 )
