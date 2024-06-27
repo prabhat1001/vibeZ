@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
 
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <footer className="bg-primary py-12">
+      <div className="container max-auto">
+        <p className="text-white text-center">
+          Copyright &copy; VibeZ 2024. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;
